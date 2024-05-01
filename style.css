@@ -6,6 +6,17 @@
 
 }
 
+.section {
+    text-align: center;
+    padding: 76px 0 51px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
 button{
     border: none;
 }
@@ -13,6 +24,7 @@ button{
     margin: auto;
     max-width: 1200px;
     padding: 0 16px;
+    text-align: left;
 }
 
 ul{
@@ -21,8 +33,6 @@ ul{
 
 .header{
     padding: 16px 0;
-    margin-left: 188px;
-    margin-right: 188px;
 
 }
 
@@ -48,11 +58,16 @@ ul{
 
 .logo{
     margin-right: 370px;
+    width: 85px;
+    height: 25px;
 }
 
-/* .header__icons_wrapper{
+.header__icons_wrapper{
     align-items: center;
-} */
+    display: flex;
+    width: 85px;
+    height: 25px;
+}
 
 .introduction{
     background-color: #F0EFEB;
@@ -68,7 +83,6 @@ ul{
 
 .introduction__container{
     display: flex;
-    margin-left: 164px;
 }
 
 .introduction__title{
@@ -94,6 +108,12 @@ ul{
     border-radius: 100px;
 
 
+}
+
+.introduction__img{
+    width: 450px;
+    height: 500px;
+    margin-left: 120px;
 }
 
 /* .img1{
@@ -122,18 +142,16 @@ ul{
 
 .society{
     background-color: #CCCCCC4D;
+    padding: 76px 0 51px;
 }
 
 .society__container{
     display: flex;
     gap: 50px;
-    margin-left: 188px;
 
 }
 
 .society__block{
-    margin-top: 85px;
-    margin-bottom: 60px;
     max-width: 535px;
 }
 
@@ -156,10 +174,9 @@ ul{
     font-weight: 700;
 }
 
-.society__img{
-    width: 325px;
-    height: 385px;
-    margin-top: 76px;
+.society__image-container{
+    width: 385px;
+    height: 525px;
 }
 
 .society{
@@ -169,7 +186,6 @@ ul{
 .society__container{
     display: flex;
     gap: 50px;
-    margin-left: 164px;
 
 }
 
@@ -211,7 +227,6 @@ ul{
 .culture__container{
     display: flex;
     gap: 50px;
-    margin-left: 164px;
 
 }
 
@@ -241,10 +256,9 @@ ul{
     font-weight: 700;
 }
 
-.culture__img{
-    width: 325px;
-    height: 385px;
-    margin-top: 76px;
+.culture__image-container{
+    width: 385px;
+    height: 325px;
 }
 
 
@@ -255,7 +269,6 @@ ul{
 .power__container{
     display: flex;
     gap: 50px;
-    margin-left: 164px;
 
 }
 
@@ -285,10 +298,9 @@ ul{
     font-weight: 700;
 }
 
-.power__img{
-    width: 325px;
-    height: 385px;
-    margin-top: 76px;
+.power__image-container{
+    width: 385px;
+    height: 325px;
 }
 .sellers{
     padding-bottom: 200px;
