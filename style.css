@@ -290,7 +290,9 @@ ul{
     height: 385px;
     margin-top: 76px;
 }
-
+.sellers{
+    padding-bottom: 200px;
+}
 .sellers__img{
     display: flex;
     gap: 60px;
