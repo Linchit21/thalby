@@ -374,14 +374,15 @@ ul{
 }
 
 .feature__container article{
-    width: 340px;
+    max-width: 340px;
+    width: 100%;
     font-size: 30px;
     font-weight: 700;
 }
 
 .feature__block-1{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 110px;
     flex-wrap: wrap;
     row-gap: 110px;
@@ -411,7 +412,8 @@ ul{
 }
 
 .discover__block article{
-    width: 288px;
+    max-width: 288px;
+    width: 100%;
     text-align: center;
 }
 
@@ -448,7 +450,8 @@ ul{
 
 .contact__text{
     font-size: 17px;
-    width: 496px;
+    max-width: 496px;
+    width: 100%;
     margin: 9px auto 25px;
 }
 
@@ -493,6 +496,7 @@ ul{
     background-color: #000000;
     width: 100%;
     color: white;
+    padding: 50px 0 16px;
 }
 
 .footer__container{
@@ -508,12 +512,7 @@ ul{
 }
 
 .footer__logo{
-    width: 129px;
-    height: 41px;
-}
-
-.footer{
-    padding: 50px 80px 16px;
+    margin-bottom: 25px;
 }
 
 .footer__links{
