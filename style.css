@@ -78,7 +78,8 @@ ul{
     justify-content: center;
     align-items: center;
     width: 40px;
-    height: 40px;
+    height: 4px;
+    background-color: #000000;
     position: relative;
     cursor: pointer;
 }
@@ -89,7 +90,7 @@ ul{
     width: 100%;
     background-color: red;
     position: absolute;
-    top: 0;
+    top: -10px;
 }
 
 .burger::before {
@@ -98,7 +99,7 @@ ul{
     width: 100%;
     background-color: red;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
 }
 
 .burger-inner {
@@ -107,13 +108,7 @@ ul{
     background-color: #000000;
 }
 
-.burger:active {
-    background-color: blue;
-    width: 100%;
-    height: 100%;
-    z-index: 50;
-    position: absolute;
-}
+
 
 .introduction{
     background-color: #F0EFEB;
@@ -130,7 +125,6 @@ ul{
 .introduction__container{
     display: flex;
     max-width: 1130px;
-    gap: 130px;
 }
 
 .introduction__title{
@@ -154,42 +148,13 @@ ul{
     padding: 8px 23px;
     cursor: pointer;
     border-radius: 100px;
-
-
 }
 
 .introduction__img-block {
+    display: flex;
     width: 600px;
     height: 520px;
-    position: relative;
 }
-
-.introduction__img{
-   position: absolute;
-   right: -35px;
-   top: 10px;
-   width: 600px;
-   height: 520px;
-}
-.piwo{
-    display: flex;
-    gap: 205px;
-    align-items: center;
-}
-
-.img1,.img2,.img3{
-    width: 300px;
-    height: 300px;
-}
-
-.img1{
-    margin-left: 200px;
-}
-
-.pol{
-    width: 300px;
-    margin: 0 auto;
-} */
 
 .society{
     background-color: #CCCCCC4D;
@@ -198,6 +163,7 @@ ul{
 
 .society__container{
     display: flex;
+    align-items: center;
     gap: 50px;
     max-width: 1196px;
     margin: 0 auto;
@@ -244,6 +210,7 @@ ul{
 .culture__container{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 60px;
     max-width: 1196px;
     padding: 76px 0 51px;
@@ -290,8 +257,7 @@ ul{
 .power__container{
     max-width: 1196px;
     display: flex;
-    /* justify-content: center; */
-    align-content: center;
+    align-items: center;
     gap: 50px;
     padding: 76px 0 51px;
 }
@@ -327,7 +293,6 @@ ul{
 
 .power__image-container{
     width: 385px;
-    margin-left: 68px;
 }
 .sellers{
     padding-bottom: 248px;
@@ -622,13 +587,11 @@ ul{
 
 @media only screen and (max-width: 1200px) {
     .introduction__container{
-        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .introduction__img{
-        right: 0;
-     }
-     
      .sellers__articles {
         gap: 10px;
     }
@@ -645,14 +608,17 @@ ul{
 
     .society__image-container{
         width: 250px;
+        flex-shrink: 0;
     }
 
     .culture__image-container{
         width: 250px;
+        flex-shrink: 0;
     }
 
     .power__image-container {
         width: 250px;
+        flex-shrink: 0;
     }
 
 }
@@ -668,10 +634,44 @@ ul{
         align-items: center;
         padding: 0;
     }
-    
-    .header {
-        display: none;
+
+    .introduction__img-block {
+        width: 300px;
+        height: 320px;
     }
+    
+    .burger {
+        display: block;
+    }
+
+    .nav {
+        width: 100%;
+        position: absolute;
+        left: -100%;
+        top: 40px;
+        transition: 1s ease-in-out all;
+    }
+
+
+    .nav_active {
+        transform: translate(100%,0);
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 50px;
+        gap: 100px;
+        background-color: rgb(178, 169, 169);
+        color: #000000;
+        padding: 25px;
+    }
+
+    .header__container {
+        position: relative;
+    }
+
 
     .sellers__articles {
         display: flex;
@@ -694,19 +694,18 @@ ul{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
     }
 
     .culture__block {
         text-align: center;
         margin: 0;
+        order: 1;
     }
 
     .power__container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
     }
 
     .power__block {
